@@ -3,4 +3,4 @@ apiVersion: v1
 metadata:
   name: vend-usage
 data:
-  VEND_USAGE: "vend-demo-secret-openshift"
+  VEND_USAGE: "vend-image-stream-demo-openshift"
