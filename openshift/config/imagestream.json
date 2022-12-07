@@ -1,0 +1,38 @@
+{
+    "apiVersion": "image.openshift.io/v1",
+    "kind": "ImageStream",
+    "metadata": {
+        "annotations": {
+            "description": "Keeps track of changes in the image.",
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"image.openshift.io/v1\",\"kind\":\"ImageStream\",\"metadata\":{\"annotations\":{\"description\":\"Keeps track of changes in the image.\"},\"name\":\"vend-image-stream\",\"namespace\":\"vend-image-stream\"}}\n"
+        },
+        "creationTimestamp": "2022-12-07T23:07:27Z",
+        "generation": 1,
+        "name": "vend-image-stream",
+        "namespace": "vend-image-stream",
+        "resourceVersion": "22933217",
+        "uid": "8d19aba1-cbe8-4492-85f9-388b17afca7b"
+    },
+    "spec": {
+        "lookupPolicy": {
+            "local": false
+        }
+    },
+    "status": {
+        "dockerImageRepository": "image-registry.openshift-image-registry.svc:5000/vend-image-stream/vend-image-stream",
+        "publicDockerImageRepository": "default-route-openshift-image-registry.apps.cosmote-pre.sdp.local/vend-image-stream/vend-image-stream",
+        "tags": [
+            {
+                "items": [
+                    {
+                        "created": "2022-12-07T23:21:11Z",
+                        "dockerImageReference": "image-registry.openshift-image-registry.svc:5000/vend-image-stream/vend-image-stream@sha256:7033801956f2a3949f881c9a419cbc74ea1c6d56e29a19790a7bf47c99c02de8",
+                        "generation": 1,
+                        "image": "sha256:7033801956f2a3949f881c9a419cbc74ea1c6d56e29a19790a7bf47c99c02de8"
+                    }
+                ],
+                "tag": "latest"
+            }
+        ]
+    }
+}
